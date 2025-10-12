@@ -26,7 +26,7 @@ async function start() {
 
 start();
 
-function generateHexKey(bytes = 32) {
+function generateKey(bytes = 32) {
 	return crypto.randomBytes(bytes).toString('base64url');
 }
 
@@ -41,7 +41,7 @@ app.get('/create_sessionKey', async (req, res) => {
 		return res.status(400).json({ error: "Already have a session_key" });
 	}
 
-	const session_key = generateHexKey();
+	const session_key = generateKey();
 	await client.setEx(user_name, Number(process.env.DEFAULT_EXPIRATION), session_key);
 	res.status(200).json({
 		key: session_key
