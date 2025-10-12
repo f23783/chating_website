@@ -16,7 +16,7 @@ const conn = new Client({
 
 });
 
-app.listen(6000, () => console.log(`Its alive on http://localhost:${6000}`));
+app.listen(6060, () => console.log(`Its alive on http://localhost:${6060}`));
 
 async function hashPass(pass) {
 	const saltRounds = 10;
@@ -43,7 +43,7 @@ app.post("/create_user", async (req, resp) => {
 
 });
 
-app.get("/get_user", (req, resp) => {
+app.post("/get_user", (req, resp) => {
 	const { user_name } = req.body;
 
 	conn.query(`SELECT * FROM users WHERE name LIKE '${user_name}'`, (err, res) => {

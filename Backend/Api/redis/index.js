@@ -30,7 +30,7 @@ function generateKey(bytes = 32) {
 	return crypto.randomBytes(bytes).toString('base64url');
 }
 
-app.get('/create_sessionKey', async (req, res) => {
+app.post('/create_sessionKey', async (req, res) => {
 	const { user_name } = req.body;
 
 	if (!user_name) {
