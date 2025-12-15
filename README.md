@@ -150,5 +150,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/f23783">f23783</a>
+  Made with by <a href="https://github.com/f23783">Arda Fidancı</a>, <a href="https://github.com/EmireGungor">Emire Güngör</a>, <a href="https://github.com/reqshift">Hatice Nisa Güngör</a>
 </p>
