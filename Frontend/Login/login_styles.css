@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #0F2027;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login_container {
+    background-color: #264854dc;
+    width: 400px;
+    padding: 50px 40px;
+    border: 2px solid rgba(203, 163, 163, 0.58);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.login_navbar .web_logo {
+    margin-bottom: 20px;
+}
+
+.login_navbar .web_logo a {
+    display: inline-block;
+    background-image: url(sample-logo2.png);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.description_texts h1 {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description_texts h4 {
+    color: rgba(245, 245, 245, 0.807);
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.description_texts h2 {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.requirement_texts {
+    margin-top: 5px;
+    color: whitesmoke;
+}
+
+.requirement_texts input[type="text"] {
+    background-color: #172c35;
+    color: whitesmoke;
+    border: 1px solid #aaa;
+}
+
+
+.requirement_texts input[type="password"] {
+    background-color: #172c35;
+    color: whitesmoke;
+    border: 1px solid #aaa;
+}
+
+
+.buttons button{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0F2027;
+    background: rgba(245, 245, 245, 0.631);
+    border: solid 1px #071013;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+.buttons button:hover {
+    background-color: #ffffffdc;
+}
+
+
+.buttons button:active {
+    background-color: #0f2027a9;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.178);
+    color: whitesmoke;
+}
+
+
+.password_operations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.password_operations h4{
+    color: rgba(245, 245, 245, 0.807);
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+.password_operations button {
+    background-color: rgba(245, 245, 245, 0.807);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.password_operations button:hover {
+    background-color: #75a0b2ae;
+}
+
+
+.password_operations button:active {
+    background-color: #0f2027a9;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.178);
+}
+
+
+.password_operations a{
+    color: rgba(245, 245, 245, 0.807);
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 20px;
+    
+}
