@@ -75,7 +75,7 @@ app.post("/auth/register", async (req, res) => {
 		if (resp.error) {
 			return res.status(500).json({ error: resp.error });
 		}
-		return res.status(200).json({ status: "ok", response: resp });
+		return res.status(201).json({ status: "ok", response: resp });
 	} catch (err) {
 		return res.status(500).json({ error: err });
 	}
