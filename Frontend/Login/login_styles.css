@@ -1,34 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BACKGROUND */
 html, body {
     height: 100%;
-    background-color: #0F2027;
     font-family: 'Roboto', sans-serif;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #1e1e2e, /* Base */
+        #181825  /* Mantle */
+    );
 }
 
-
+/* LOGIN CARD */
 .login_container {
-    background-color: #264854dc;
+    background-color: #313244; /* Surface 0 */
     width: 400px;
     padding: 50px 40px;
-    border: 2px solid rgba(203, 163, 163, 0.58);
-    border-radius: 50px;
+
+    border-radius: 32px;
+    border: none;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+        0 30px 70px rgba(0, 0, 0, 0.65);
 }
 
-
+/* LOGO */
 .login_navbar .web_logo {
     margin-bottom: 20px;
 }
@@ -43,127 +58,128 @@ html, body {
     background-repeat: no-repeat;
 }
 
-
+/* TEXTS */
 .description_texts h1 {
-    color: whitesmoke;
+    color: #cdd6f4; /* Text */
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .description_texts h4 {
-    color: rgba(245, 245, 245, 0.807);
+    color: #a6adc8; /* Subtext 1 */
     font-size: 13px;
     font-style: italic;
     margin-bottom: 10px;
 }
 
 .description_texts h2 {
-    color: whitesmoke;
+    color: #cdd6f4;
     font-size: 30px;
     font-weight: bold;
     margin: 20px 0;
 }
 
-
+/* INPUTS */
 input {
+    text-align: center;
     width: 100%;
     margin: 10px 0;
     height: 40px;
     padding: 10px;
+
     border-radius: 10px;
-    border: none;
+    border: 2px solid #45475a; /* Surface 2 */
+
+    background-color: #1e1e2e; /* Base */
+    color: #cdd6f4;
+
+    font-size: 14px;
 }
 
+input:focus {
+    outline: none;
+    border-color: #89b4fa; /* Blue */
+}
 
+/* REQUIREMENT TEXT */
 .requirement_texts {
     margin-top: 5px;
-    color: whitesmoke;
+    color: #cdd6f4;
 }
 
-.requirement_texts input[type="text"] {
-    background-color: #172c35;
-    color: whitesmoke;
-    border: 1px solid #aaa;
-}
-
-
-.requirement_texts input[type="password"] {
-    background-color: #172c35;
-    color: whitesmoke;
-    border: 1px solid #aaa;
-}
-
-
-.buttons button{
+/* BUTTON */
+.buttons button {
     height: 40px;
     width: 120px;
+
     font-size: 15px;
     font-weight: bold;
-    color: #0F2027;
-    background: rgba(245, 245, 245, 0.631);
-    border: solid 1px #071013;
+
+    color: #1e1e2e;
+    background-color: #89b4fa; /* Blue */
+
+    border: none;
     cursor: pointer;
     outline: none;
     border-radius: 15px;
     margin-top: 20px;
-}
 
+    transition: background-color 0.2s ease;
+}
 
 .buttons button:hover {
-    background-color: #ffffffdc;
+    background-color: #94e2d5; /* Teal */
 }
-
 
 .buttons button:active {
-    background-color: #0f2027a9;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.178);
-    color: whitesmoke;
+    background-color: #cba6f7; /* Mauve */
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.6);
+    color: #1e1e2e;
 }
 
-
-.password_operations{
+/* PASSWORD ACTIONS */
+.password_operations {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+
     text-align: center;
     margin-top: 20px;
 }
 
-
-.password_operations h4{
-    color: rgba(245, 245, 245, 0.807);
+.password_operations h4 {
+    color: #a6adc8;
     font-size: 13px;
     font-style: italic;
 }
 
-
 .password_operations button {
-    background-color: rgba(245, 245, 245, 0.807);
-    padding: 10px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+    background-color: #45475a; /* Surface 2 */
+    color: #cdd6f4;
 
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
 
 .password_operations button:hover {
-    background-color: #75a0b2ae;
+    background-color: #585b70; /* Surface 1 */
 }
-
 
 .password_operations button:active {
-    background-color: #0f2027a9;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.178);
+    background-color: #cba6f7;
+    color: #1e1e2e;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-
-.password_operations a{
-    color: rgba(245, 245, 245, 0.807);
+.password_operations a {
+    color: #89b4fa; /* Blue */
     font-size: 13px;
     font-style: italic;
     margin-left: 20px;
-    
 }
